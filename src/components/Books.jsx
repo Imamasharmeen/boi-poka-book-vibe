@@ -10,7 +10,7 @@ export default function Books() {
     },[])
     return (
         <div>
-            <div className='w-10/12 border'>
+            <div className='w-10/12 mx-auto border grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
                     books.map(book =><Book book={book}></Book>)
                 }
