@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Banner from './Banner'
+import { Outlet } from 'react-router-dom'
+
+
 
 export default function Root() {
   return (
     <div>
-      <Navbar></Navbar>
-      <Banner></Banner>
-      <Footer></Footer>
+        <Navbar></Navbar>
+        <Outlet></Outlet>
+        <Footer></Footer>
     </div>
   )
 }
