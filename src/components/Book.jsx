@@ -16,7 +16,7 @@ export default function Book({book}) {
                     <div className="card-body">
                         <div className="card-actions justify-end">
                             {
-                            tags.map(tag=><button className="btn btn-xs">{tag}</button>)
+                            tags.map((tag, index)=><button key={index} className="btn btn-xs">{tag}</button>)
                             }
                         </div>
                         
